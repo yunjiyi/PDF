@@ -1,3 +1,12 @@
+// 定义 expandCollapseToggle 函数
+function expandCollapseToggle(parent) {
+  const content = parent.querySelector('.feature-group-content');
+  if (content) {
+    const isExpanded = content.style.display !== 'none';
+    content.style.display = isExpanded ? 'none' : 'block';
+  }
+}
+
 function filterCards() {
   var input = document.getElementById('searchBar');
   var filter = input.value.toUpperCase().trim();
